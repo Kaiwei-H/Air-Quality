@@ -26,7 +26,7 @@ Principales étapes :
 - transformation des valeurs en format numérique
 - structuration du dataset sous forme de série temporelle
 
-Le dataset contient environ **10 000 observations** et **une centaine de variables** issues de capteurs de gaz (CO, NOx, benzène, etc.).
+Le dataset contient environ **9 000 observations** et **une centaine de variables** issues de capteurs de gaz (CO, NOx, benzène, etc.).
 
 ---
 
@@ -36,8 +36,8 @@ Afin d’améliorer la capacité prédictive des modèles, plusieurs variables s
 
 - variables temporelles (heure, jour, mois)
 - variables retardées (lags)
-- moyennes mobiles
-- interactions entre capteurs
+- vrariables environnementales
+
 
 Ces features permettent de capturer **les dépendances temporelles et les dynamiques environnementales**.
 
@@ -58,12 +58,7 @@ Cette étape permet d’identifier **des tendances et anomalies dans les donnée
 ## Interpolation des Données Manquantes
 
 Les données issues de capteurs environnementaux contiennent souvent des valeurs manquantes.
-
-Plusieurs méthodes ont été testées :
-
-- interpolation linéaire
-- forward / backward filling
-- interpolation temporelle
+Un interpolation linéaire est appliqués.
 
 Ces méthodes permettent de **préserver la cohérence des séries temporelles**.
 
@@ -99,8 +94,8 @@ La séparation entre données d’entraînement et de test respecte l’ordre te
 
 Division typique :
 
-- 80 % données d’entraînement
-- 20 % données de test
+- 60 % données d’entraînement
+- 40 % données de test
 
 ---
 
