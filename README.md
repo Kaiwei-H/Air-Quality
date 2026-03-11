@@ -1,6 +1,14 @@
 
 # Analyse et Prévision de la Qualité de l’Air
+## Technologies utilisées
 
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Statsmodels
+- PyTorch
+- Matplotlib / Seaborn
 ## Introduction
 
 Ce projet vise à analyser et prévoir des indicateurs de qualité de l’air à partir de séries temporelles environnementales.
